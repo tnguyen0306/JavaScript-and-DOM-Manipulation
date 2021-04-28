@@ -42,6 +42,7 @@ function runEnter() {
   var filteredData = tableData.filter(dataInfo => 
     dataInfo.datetime === valueDate &&
     dataInfo.city === valueCity &&
+    dataInfo.state === valueState &&
     dataInfo.country === valueCountry &&
     dataInfo.shape === valueShape
     );
