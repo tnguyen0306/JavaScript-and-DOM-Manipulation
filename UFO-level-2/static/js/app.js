@@ -9,7 +9,7 @@ var form = d3.select("form");
 
 // Create event handlers 
 button.on("click", runEnter);
-form.on("submit",runEnter);
+form.on("submit", runEnter);
 
 // Complete the event handler function for the form
 function runEnter() {
@@ -50,16 +50,16 @@ function runEnter() {
   console.log(filteredData);
 
   // // Then, select the unordered list element by class name
-  // var list = d3.select("tbody");
+  var list = d3.select("tbody");
 
-  // // remove any children from the list to
-  // list.html("");
+  // remove any children from the list to
+  list.html("");
 
-  // // append stats to the list
-  // filteredData.forEach(events => {
-  //   var row = list.append("tr");
-  //   var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"];
-  //   columns.forEach(column => row.append("td").text(events[column])
-  //   )
-  // });
+  // append stats to the list
+  filteredData.forEach(events => {
+    var row = list.append("tr");
+    var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"];
+    columns.forEach(column => row.append("td").text(events[column])
+    )
+  });
 };
