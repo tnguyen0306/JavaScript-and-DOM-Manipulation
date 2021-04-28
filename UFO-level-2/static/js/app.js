@@ -39,22 +39,27 @@ function runEnter() {
   console.log(valueShape);
 
   // Filter the data based on input value
-//   var filteredData = tableData.filter(dataInfo => dataInfo.datetime === inputDate);
+  var filteredData = tableData.filter(dataInfo => 
+    dataInfo.datetime === valueDate &&
+    dataInfo.city === valueCity &&
+    dataInfo.country === valueCountry &&
+    dataInfo.shape === valueShape
+    );
 
-//   // Print the value to the console
-//   console.log(filteredData);
+  // Print the value to the console
+  console.log(filteredData);
 
-//   // Then, select the unordered list element by class name
-//   var list = d3.select("tbody");
+  // // Then, select the unordered list element by class name
+  // var list = d3.select("tbody");
 
-//   // remove any children from the list to
-//   list.html("");
+  // // remove any children from the list to
+  // list.html("");
 
-//   // append stats to the list
-//   filteredData.forEach(events => {
-//     var row = list.append("tr");
-//     var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"];
-//     columns.forEach(column => row.append("td").text(events[column])
-//     )
-//   });
+  // // append stats to the list
+  // filteredData.forEach(events => {
+  //   var row = list.append("tr");
+  //   var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"];
+  //   columns.forEach(column => row.append("td").text(events[column])
+  //   )
+  // });
 };
