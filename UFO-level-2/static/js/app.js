@@ -63,4 +63,5 @@ function runEnter() {
     columns.forEach(column => row.append("td").text(events[column])
     )
   });
+  
 };
