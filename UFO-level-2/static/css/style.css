@@ -223,3 +223,9 @@ select {
     opacity: 1;
   }
 }
+
+input[type=submit] {
+  background-color: rgb(78, 93, 108);
+  border: none;
+  color: rgb(78, 93, 108);
+}
