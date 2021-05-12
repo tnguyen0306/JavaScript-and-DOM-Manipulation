@@ -9,7 +9,18 @@ var form = d3.select("form");
 
 // Create event handlers 
 button.on("click", runEnter);
-form.on("submit", runEnter);
+form.on("submit",runEnter);
+
+// Select the unordered list element by class name
+var list = d3.select("tbody");
+
+// Create initial table
+tableData.forEach(events => {
+  var row = list.append("tr");
+  var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"];
+  columns.forEach(column => row.append("td").text(events[column])
+  )
+});
 
 // Complete the event handler function for the form
 function runEnter() {
@@ -50,13 +61,10 @@ function runEnter() {
   // Print the value to the console
   console.log(filteredData);
 
-  // // Then, select the unordered list element by class name
-  var list = d3.select("tbody");
-
-  // remove any children from the list to
+  // Remove any children from the list to
   list.html("");
 
-  // append stats to the list
+  // Append stats to the list
   filteredData.forEach(events => {
     var row = list.append("tr");
     var columns = ["datetime", "city", "state", "country", "shape", "durationMinutes", "comments"];
