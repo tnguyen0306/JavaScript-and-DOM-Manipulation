@@ -22,6 +22,10 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
+Visit [this website](https://tnguyen0306.github.io/JavaScript-and-DOM-Manipulation/UFO-level-1/) for the final result of Level 1.
+
+![result level 1](images/level1.png)
+
 ### Level 2: Multiple Search Categories (Optional)
 
 * Complete all of Level 1 criteria.
@@ -33,6 +37,10 @@ You can handle this... right? The planet Earth needs to know what we have found!
   3. `state`
   4. `country`
   5. `shape`
+
+Visit [this website](https://tnguyen0306.github.io/JavaScript-and-DOM-Manipulation/UFO-level-2/) for the final result of Level 2.
+
+![result level 2](images/level2.png)
 
 - - -
 
